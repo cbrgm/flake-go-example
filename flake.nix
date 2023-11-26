@@ -39,7 +39,7 @@
       devShells = forAllSystems
         ({ pkgs }: {
           default = pkgs.mkShell {
-            shellHook = "echo Welcome to this devshell!";
+            shellHook = "echo Welcome to your Go dev shell!";
             packages = with pkgs; [
               go-mockery
               golangci-lint
